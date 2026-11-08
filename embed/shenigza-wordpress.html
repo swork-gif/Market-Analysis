@@ -1,0 +1,25 @@
+<!-- შენი გზა შრომის ბაზარზე — ჩასვით WordPress-ში (Custom HTML ბლოკი ან Avada Code Block) -->
+<!-- რეპორტის მისამართი: https://swork-gif.github.io/Market-Analysis/shenigza/ -->
+<div class="smart-path">
+  <iframe id="smart-path-frame"
+          src="https://swork-gif.github.io/Market-Analysis/shenigza/"
+          title="შენი გზა შრომის ბაზარზე"
+          loading="lazy"
+          style="width:100%;height:2400px;border:0;display:block"></iframe>
+  <noscript><a href="https://swork-gif.github.io/Market-Analysis/shenigza/">გახსენით რეპორტი</a></noscript>
+</div>
+<script>
+  (function () {
+    var frame = document.getElementById('smart-path-frame');
+    window.addEventListener('message', function (e) {
+      if (e.origin !== 'https://swork-gif.github.io' || !e.data) return;
+      if (e.data.smartPathHeight) {
+        frame.style.height = e.data.smartPathHeight + 'px';
+      }
+      if (typeof e.data.smartPathScroll === 'number') {
+        var top = frame.getBoundingClientRect().top + window.scrollY + e.data.smartPathScroll - 90;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  })();
+</script>
