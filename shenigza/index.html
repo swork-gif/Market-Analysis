@@ -360,8 +360,6 @@ details.fn[open] summary::after{content:"დახურვა ▴"}
 .theme .ti{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#01406B}
 .theme svg{width:16px;height:16px;transition:transform .5s}
 .theme .moon{display:none}
-.isdark .theme .sun{display:none}.isdark .theme .moon{display:block}
-.isdark .theme .ti{background:#2B3460;color:#FFE07A}
 .theme:hover svg{transform:rotate(-25deg)}
 .hero{position:relative;overflow:hidden;isolation:isolate}
 .hero-deco{position:absolute;inset:0;z-index:-1;pointer-events:none}
@@ -487,9 +485,6 @@ button.sgo{font:inherit;font-size:13px;font-weight:700;border:0;cursor:pointer}
 .hrl li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--white);border-radius:10px;padding:8px 12px}
 .hrl li span{display:grid;gap:1px;min-width:0}.hrl li b{font-size:13px;color:var(--navy)}.hrl li small{font-size:11.5px;color:var(--muted)}
 .hrl li em{font-style:normal;font-family:var(--n);font-weight:800;font-size:13px;color:#3340FF;white-space:nowrap}
-:root[data-theme="dark"] .hrl{background:rgba(255,255,255,.06)!important}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hrl{background:rgba(255,255,255,.06)!important}}
-:root[data-theme="dark"] .hrl li em{color:#9AA2FF}
 .sinfo>summary{outline:1.5px solid #3340FF;outline-offset:2px}
 .sinfo>summary:focus-visible{outline-width:2.5px}
 .sinfo>summary,.sh .sinfo>summary{background:#E6E8EE!important;color:#01406B!important;outline-color:#01406B!important}
@@ -505,8 +500,6 @@ button.sgo{font:inherit;font-size:13px;font-weight:700;border:0;cursor:pointer}
 .wt i{display:block;height:100%;border-radius:8px;background:#B7A6FF}
 .wr.now .wt i{background:#3340FF}
 .wr b{font-family:var(--n);font-weight:800;font-size:15px;text-align:right}
-:root[data-theme="dark"] .wt{background:rgba(255,255,255,.08)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .wt{background:rgba(255,255,255,.08)}}
 @media (max-width:620px){.wcmp{grid-template-columns:minmax(0,1fr);gap:14px}.wup{grid-auto-flow:column;align-items:center;justify-content:start;gap:12px}}
 .rq3{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:stretch;margin-top:4px}.rqc.c3{grid-column:2;grid-row:1/span 2}.rqc.c1{grid-column:1;grid-row:1}.rqc.c2{grid-column:1;grid-row:2}
 .rqc{border-radius:18px;padding:14px;color:#16142B}
@@ -523,8 +516,6 @@ button.sgo{font:inherit;font-size:13px;font-weight:700;border:0;cursor:pointer}
 .rqs b{font-family:var(--n);font-weight:800;font-size:28px;line-height:1;color:#3340FF}
 .rqs span{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.25}
 .rqm{font-size:13px;color:var(--muted);margin-top:10px}.rqm b{color:var(--navy)}
-:root[data-theme="dark"] .rqs b{color:#9AA2FF}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rqs b{color:#9AA2FF}}
 .rqs li{min-width:0}.rqs span{overflow-wrap:anywhere}
 @media (max-width:620px){.rqs{grid-template-columns:minmax(0,1fr);gap:6px}.rqs li{grid-template-columns:64px minmax(0,1fr);align-items:center;padding:10px 14px}.rqs b{font-size:20px}.rqs span{font-size:13px;overflow-wrap:normal}}
 /* day view (from the day report) */
@@ -587,8 +578,7 @@ button.sgo{font:inherit;font-size:13px;font-weight:700;border:0;cursor:pointer}
 .vsw a[aria-current="page"]{background:#3340FF;color:#fff}
 .app-shell .vsw{display:none}
 @media (prefers-reduced-motion:reduce){.hero-deco i,.hero-deco b,.kicker i,.ic .bar,.ic .pulse,.ic .ring,.ic .dot{animation:none!important}.ic .pulse{stroke-dashoffset:0}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1420; --white:#152131; --navy:#E4ECF6; --ink:#C6D2DF; --muted:#94A4B6; --line:#26364A; --vt:#1E2447; --lt:#1D2814; --pt:#2C1A27; --deep:#0A2F4F; --track:#24344A; --barlo:#3B4396; --bt:#132A3D; --ok:#8FCB4E; --bad:#F06A9C; --shade:rgba(0,0,0,.35); color-scheme:dark;}:root:not([data-theme="light"]) .lime,:root:not([data-theme="light"]) .next,:root:not([data-theme="light"]) .warn,:root:not([data-theme="light"]) .dcard .dd em,:root:not([data-theme="light"]) .wday .dd,:root:not([data-theme="light"]) .violet .tips li::before,:root:not([data-theme="light"]) .mark{color:#01406B}:root:not([data-theme="light"]) .mark{color:var(--lime)}:root:not([data-theme="light"]) .dpcard .pills .pill{color:#01406B}:root:not([data-theme="light"]) .mr .ok{color:var(--ok)}.mr .no{color:var(--bad)}:root:not([data-theme="light"]) .hm td{color:var(--navy)}:root:not([data-theme="light"]) .legend i{background:linear-gradient(90deg,:root:not([data-theme="light"]) #1E2447,:root:not([data-theme="light"]) #4A55FD)}:root:not([data-theme="light"]) .fbox{border-color:var(--line)}:root:not([data-theme="light"]) .hero{background:#3D46E0}:root:not([data-theme="light"]) .sl:nth-child(1) .sb b,:root:not([data-theme="light"]) .sl:nth-child(3) .sb b,:root:not([data-theme="light"]) .tl{color:#01406B}:root:not([data-theme="light"]) .tl.t0,:root:not([data-theme="light"]) .tl.t4{background:#C9CEF9}.tl.t1{background:#E3F2B0}.tl.t2{background:#FFD3EA}.tl.t3{background:#CFE8FF}}
-:root[data-theme="dark"]{--bg:#0C1420; --white:#152131; --navy:#E4ECF6; --ink:#C6D2DF; --muted:#94A4B6; --line:#26364A; --vt:#1E2447; --lt:#1D2814; --pt:#2C1A27; --deep:#0A2F4F; --track:#24344A; --barlo:#3B4396; --bt:#132A3D; --ok:#8FCB4E; --bad:#F06A9C; --shade:rgba(0,0,0,.35); color-scheme:dark;}:root[data-theme="dark"] .lime,:root[data-theme="dark"] .next,:root[data-theme="dark"] .warn,:root[data-theme="dark"] .dcard .dd em,:root[data-theme="dark"] .wday .dd,:root[data-theme="dark"] .violet .tips li::before,:root[data-theme="dark"] .mark{color:#01406B}:root[data-theme="dark"] .mark{color:var(--lime)}:root[data-theme="dark"] .dpcard .pills .pill{color:#01406B}:root[data-theme="dark"] .mr .ok{color:var(--ok)}.mr .no{color:var(--bad)}:root[data-theme="dark"] .hm td{color:var(--navy)}:root[data-theme="dark"] .legend i{background:linear-gradient(90deg,:root[data-theme="dark"] #1E2447,:root[data-theme="dark"] #4A55FD)}:root[data-theme="dark"] .fbox{border-color:var(--line)}:root[data-theme="dark"] .hero{background:#3D46E0}:root[data-theme="dark"] .sl:nth-child(1) .sb b,:root[data-theme="dark"] .sl:nth-child(3) .sb b,:root[data-theme="dark"] .tl{color:#01406B}:root[data-theme="dark"] .tl.t0,:root[data-theme="dark"] .tl.t4{background:#C9CEF9}.tl.t1{background:#E3F2B0}.tl.t2{background:#FFD3EA}.tl.t3{background:#CFE8FF}
+.mr .no{color:var(--bad)}.tl.t1{background:#E3F2B0}.tl.t2{background:#FFD3EA}.tl.t3{background:#CFE8FF}
 @media (max-width:620px){#s7 .grid{grid-template-columns:repeat(2,minmax(0,1fr))}#s7 .grid>.t{grid-column:1/-1}#s7 .grid>.t.half{grid-column:auto;padding:14px;gap:6px}#s7 .half h3{font-size:13.5px}#s7 .half .num{font-size:30px!important}#s7 .half p{font-size:11.5px}}
 .mdet{background:var(--white);border-radius:16px;padding:0;box-shadow:0 1px 2px var(--shade)}
 .mdet>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;font-size:13.5px;font-weight:800;color:var(--navy)}
@@ -605,7 +595,7 @@ section.s.method{padding-block:14px 4px}
 <div class="wrap">
   <div class="top">
     <div class="brand"><span class="mark">SMART</span>SMART Support</div>
-    <div class="r"><span>ვაკანსიების პულსი · ოქტომბერი 2026</span><button class="theme" type="button" id="themeBtn" aria-label="ღამის რეჟიმი"><span class="ti"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><span id="themeTx">დღე</span></button></div>
+    <div class="r"><span>ვაკანსიების პულსი · ოქტომბერი 2026</span></div>
   </div>
 
   <header class="hero hero3">
@@ -1248,15 +1238,7 @@ var D={"weeks":["30 სექ – 6 ოქტ","7–13 ოქტ","14–20 ო�
 })();
 </script>
 <script>
-(function(){var root=document.documentElement,btn=document.getElementById('themeBtn'),tx=document.getElementById('themeTx');
-  var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null,saved=null;
-  try{saved=localStorage.getItem('sp-theme')}catch(e){}
-  function isDark(){var t=root.getAttribute('data-theme');return t?t==='dark':!!(mq&&mq.matches)}
-  function paint(){var d=isDark();root.classList.toggle('isdark',d);tx.textContent=d?'ღამე':'დღე';btn.setAttribute('aria-label',d?'დღის რეჟიმზე გადართვა':'ღამის რეჟიმზე გადართვა');btn.setAttribute('aria-pressed',d)}
-  if(saved==='dark'||saved==='light')root.setAttribute('data-theme',saved);
-  btn.addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('sp-theme',n)}catch(e){}paint()});
-  if(mq&&mq.addEventListener)mq.addEventListener('change',paint);
-  paint();
+(function(){
   var N=document.getElementById('heroN');function k(){var v=N.textContent;document.getElementById('heroK').textContent=v;var hm=document.getElementById('heroM');if(hm)hm.firstChild.nodeValue=v}k();
 })();
 </script>
